@@ -1,0 +1,21 @@
+[package]
+name = "scriba-cli"
+description = "scriba userspace cli"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tap = "*"
+tracing = "*"
+tracing-subscriber = { version = "*", features = ["fmt", "env-filter", "ansi"] }
+tracing-appender = "*"
+config = "*"
+serde = { version = "*", features = ["derive"] }
+clap = { version = "*", features = ["derive", "cargo"] }
+clap_complete = "*"
+anyhow = "*"
+zip = "*"
+tempfile = "*"
+dialoguer = "*"
+indicatif = "*"
+libc = "*"
